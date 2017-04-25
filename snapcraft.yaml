@@ -1,0 +1,16 @@
+name: k8s-snap-bot-test
+version: '0.1'
+summary: bot publishing test
+description: |
+  bot publishing test
+grade: stable
+confinement: strict
+
+parts:
+  test:
+    plugin: dump
+    source: .
+
+apps:
+  test:
+    command: ./test
